@@ -1,0 +1,43 @@
+.header {
+    padding: 0.2em 2em;
+    box-shadow: 0 0 5px #555;
+    margin-bottom: 4em;
+    position: fixed;
+    width: 100%;
+    background-color: #282c34;
+    flex-wrap: wrap;
+  }
+  .header__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .header__icon {
+    position: relative;
+    margin-right: 2em;
+  }
+  .header__iconImg {
+    height: 50px;
+    width: 50px;
+    padding: 0.7em;
+    cursor: pointer;
+  }
+  .iconoFunko{
+    height: 50px;
+    width: 100px;
+    border-radius: 50%;
+
+  }
+  .header__quantity {
+    font-size: 1em;
+    position: absolute;
+    font-weight: bold;
+    padding: 0.2em;
+    height: 20px;
+    width: 20px;
+    left: 2.5em;
+    background-color: rgb(233, 8, 8);
+    border-radius: 50%;
+    color: #fff;
+  }
+

@@ -1,24 +1,34 @@
 
 
+import { useEffect } from 'react';
 import './App.css';
-import Card from './components/card/Card';
-import Content from './components/contentCard/Content';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
-import Modal from './components/modal/Modal';
-import NavBar from './components/navBar/NavBar';
+import ShoppingCart from './components/ShoppingCart';
+import ProductsList from './components/ProductsList';
+import useStore from './store';
+import ProductNabvar from './components/ProductNabvar';
+import Example from './components/modal/Modal';
+
 
 function App() {
+  const { ShoppingCartStatus,FecthData, } = useStore();
+ 
+  useEffect(()=>{
+    FecthData();
+  },[])
+  
   return (
-    <div>
-    <Card/>
-    <Content/>
-    <Footer/>
-    <Header/>
-    <Modal/>
-    <NavBar/>
+    <div className="App">
+      
+       
+        <ProductNabvar/>,<Example/>
+      {
+        ShoppingCartStatus ? <ShoppingCart /> : <ProductsList /> 
+      }
+  
     </div>
   );
+
 }
+
 
 export default App;
