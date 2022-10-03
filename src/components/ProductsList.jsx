@@ -16,7 +16,7 @@ function ProductsList() {
             <p className="product__name">{product.title}</p>
             <p>Precio : {product.price}</p>
             
-            <button className="product__btn" onClick={(etShow) => ProductAdd(product)}>
+            <button className="product__btn" onClick={() => ProductAdd(product)}>
               Agregar al Carrito
             </button> 
           </div>
